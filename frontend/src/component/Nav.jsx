@@ -3,9 +3,9 @@ import React from 'react';
 export default function Nav(props) {
     return (
         <div>
-            <nav className={`navbar navbar-expand-lg ${props.mode === 'light' ? 'navbar-light bg-light' : 'navbar-dark bg-dark'}`}>
+            <nav className={`navbar navbar-expand-lg ${props.mode === 'light' ? 'navbar-dark bg-dark' : 'navbar-dark bg-dark'}`}>
                 <div className="container-fluid">
-                    <a className="navbar-brand" href="#">Navbar</a>
+                    <a className="navbar-brand" href="#">Acedom</a>
                     <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                         <span className="navbar-toggler-icon"></span>
                     </button>
@@ -19,10 +19,10 @@ export default function Nav(props) {
                                     Dropdown
                                 </a>
                                 <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
-                                    <li><a className="dropdown-item" href="#">Action</a></li>
-                                    <li><a className="dropdown-item" href="#">Another action</a></li>
+                                    <li><a className="dropdown-item" href="#">Login</a></li>
+                                    <li><a className="dropdown-item" href="#">Feedback</a></li>
                                     <li><hr className="dropdown-divider" /></li>
-                                    <li><a className="dropdown-item" href="#">Something else here</a></li>
+                                    <li><a className="dropdown-item" href="#">About us</a></li>
                                 </ul>
                             </li>
                         </ul>
@@ -30,10 +30,7 @@ export default function Nav(props) {
                             <input className="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
                             <button className="btn btn-outline-success" type="submit">Search</button>
                         </form>
-                        <div className="form-check form-switch my-2">
-                            <input className="form-check-input" type="checkbox" id="flexSwitchCheckDefault" onChange={props.toggleMode} />
-                            <label className="form-check-label" htmlFor="flexSwitchCheckDefault">{props.mode === 'light'? 'Enable Night':'Enable Day'}</label>
-                        </div>
+                       
                     </div>
                 </div>
             </nav>

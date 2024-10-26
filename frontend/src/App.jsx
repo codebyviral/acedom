@@ -2,7 +2,7 @@ import { React, useEffect } from "react";
 import Nav from "./component/Nav";
 import Body from "./component/Body";
 import { useState } from "react";
-
+import Login from "./component/Login";
 export default function App() {
   const [mode, setmode] = useState("light");
   const [divyesh, setDivyesh] = useState("Ame Leri Lala");
@@ -23,6 +23,7 @@ export default function App() {
     <div>
       <Nav mode={mode} toggleMode={toggleMode} />
       <Body mode={mode}  />
+      <Login/>
     </div>
   );
 }

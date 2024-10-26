@@ -18,14 +18,14 @@ video{
 }
 
 .container{
-  margin-top: 7px;
+  margin-top: 50px;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 h1 {
   color: white;
-  font-size: 32px;
+  font-size: 33px;
   font-weight: 600;
 }
 
