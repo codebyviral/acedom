@@ -1,9 +1,9 @@
-import React from 'react'
+import React from 'react';
 
 export default function Nav(props) {
     return (
         <div>
-            <nav className="navbar navbar-expand-lg navbar-light bg-light">
+            <nav className={`navbar navbar-expand-lg ${props.mode === 'light' ? 'navbar-light bg-light' : 'navbar-dark bg-dark'}`}>
                 <div className="container-fluid">
                     <a className="navbar-brand" href="#">Navbar</a>
                     <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -25,20 +25,18 @@ export default function Nav(props) {
                                     <li><a className="dropdown-item" href="#">Something else here</a></li>
                                 </ul>
                             </li>
-
                         </ul>
-            
                         <form className="d-flex mx-5">
-                            <input className="form-control me-2" type="search" placeholder="search" aria-label="Search" />
-                            <button className="btn btn-outline-success" type="submit">search</button>
+                            <input className="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
+                            <button className="btn btn-outline-success" type="submit">Search</button>
                         </form>
-                        <div class="form-check form-switch my-2">
-                            <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault" />
-                            <label class="form-check-label"  for="flexSwitchCheckDefault">Dark mode</label>
+                        <div className="form-check form-switch my-2">
+                            <input className="form-check-input" type="checkbox" id="flexSwitchCheckDefault" onChange={props.toggleMode} />
+                            <label className="form-check-label" htmlFor="flexSwitchCheckDefault">{props.mode === 'light'? 'Enable Night':'Enable Day'}</label>
                         </div>
                     </div>
                 </div>
             </nav>
         </div>
-    )
+    );
 }

@@ -7,6 +7,7 @@ video{
   left: 0;
   z-index: -1;
   margin-bottom: 100vh;
+  position: fixed;
 }
 
 *{
@@ -25,6 +26,7 @@ video{
 h1 {
   color: white;
   font-size: 32px;
+  font-weight: 600;
 }
 
 span {

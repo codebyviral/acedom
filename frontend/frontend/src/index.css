@@ -1,0 +1,36 @@
+video{
+  width: 100vh;
+  height: 100vh;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  margin-bottom: 100vh;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+.container{
+  margin-top: 7px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+h1 {
+  color: white;
+  font-size: 32px;
+}
+
+span {
+  font-weight: 700;
+  color: purple;
+  font-size: 32px;
+  text-shadow: 5px 3px 30px purple;
+
+}

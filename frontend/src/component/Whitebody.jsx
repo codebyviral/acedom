@@ -5,7 +5,7 @@ export default function Whitebody() {
          useEffect(() => {
 
         var typed = new Typed('.auto-typed', {
-            strings: ['Ict',"Chemical",'Cse','Ece','Petroleum','Mechenical','Civil','Bio-technology','electrical',''],
+            strings: ['Ict',"Chemical",'Cse','Ece','Petroleum','Mechenical','Civil','Bio-technology','Electrical'],
         typeSpeed: 80,
         backSpeed: 80,
         loop: true
